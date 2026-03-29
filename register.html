@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT_EXHIBITION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center;     /* vertical center */
+            min-height: 100vh;       /* full viewport height */
+            padding: 20px;
+            background-color: #f5f7fa; /* optional page background */
+        }
+
+        /* Registration Form and Thank You Box */
+        .registration-form, .thankyou-box {
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            padding: 35px 40px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        /* Form Heading */
+        .registration-form h2, .thankyou-box h2 {
+            text-align: center;
+            color: #0a66c2;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0a66c2;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Labels */
+        .registration-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Inputs and Textarea */
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="number"],
+        .registration-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .registration-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Submit Button */
+        .registration-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0a66c2;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .registration-form button:hover {
+            background-color: #084a8a;
+        }
+
+        /* Thank You Box */
+        .thankyou-box {
+            display: none;
+            text-align: center;
+        }
+
+        .thankyou-box p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .thankyou-box a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0a66c2;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .thankyou-box a:hover {
+            background-color: #084a8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IT_EXHIBITION</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-- main content  -->
+    <main>
+        <form class="registration-form" id="regForm">
+            <h2>IT Exhibition 2025 Registration</h2>
+
+            <label for="name">Full Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">phone :</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your Phone number" required>
+
+            <label for="project">Project Name :</label>
+            <input type="text" id="project" name="project" placeholder="Enter your project name" required>
+
+            <label for="description">Project Description :</label>
+            <textarea id="description" name="description" placeholder="Briefly describe your project" required></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div class="thankyou-box" id="thankYouMessage">
+            <h2>Registration Successful!</h2>
+            <p>Your project has been successfully registered for IT Exhibition 2025. Thank you!</p>
+            <a href="index.html" id="backButton">Back to Register</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>IT Exhibition 2025</h3>
+                <p>Empowering students to innovate and showcase technology.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: IT_EXHIBITION_2025@itexhibition.com</p>
+                <p>Phone: +91 7567628465</p>
+                <p>Location: India</p>
+                <p id="social-media" style="color: #ff9800;">
+                    Follow us: 
+                    <a href="https://x.com/sandipdolar/likes" target="_blank"  aria-label="Twitter"><i class="fa fa-twitter" style="color: #1DA1F2;"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577570896349" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" style="color: blue;"></i></a>
+                    <a href="https://linkedin.com/in/sandip-dolar-94b28633b" target="_blank"  aria-label="LinkedIn"><i class="fa fa-linkedin" style="color: #1DA1F2;"></i>   </a>
+                </p>
+                <p>
+                    <i style="font-size: 22px; color: #ff9800;" class="fa fa-instagram"></i>             
+                    <a style="color: #1DA1F2;text-decoration: none;" href="https://www.instagram.com/sandip._.ahir._.212/?next=%2F" target="_blank">sandip._.ahir._.212</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 IT Exhibition. All rights reserved.
+        </div>
+    </footer> 
+    <script>
+        const form = document.getElementById('regForm');
+        const thankYou = document.getElementById('thankYouMessage');
+        const backButton = document.getElementById('backButton');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault(); // prevent page reload
+            form.style.display = 'none'; // hide form
+            thankYou.style.display = 'block'; // show thank you message
+        });
+
+        backButton.addEventListener('click', function(e){
+            e.preventDefault();
+            thankYou.style.display = 'none'; // hide thank you
+            form.style.display = 'block'; // show form
+            form.reset(); // clear form fields
+        });
+    </script> 
+    <script src="script.js"></script>
+</body>
+</html>

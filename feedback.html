@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT_EXHIBITION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 100vh;       
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+
+        .feedback-form, .thankyou-box {
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            padding: 35px 40px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        .feedback-form h2, .thankyou-box h2 {
+            text-align: center;
+            color: #0a66c2;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0a66c2;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .feedback-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .feedback-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0a66c2;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-form button:hover {
+            background-color: #084a8a;
+        }
+
+        .thankyou-box {
+            display: none;
+            text-align: center;
+        }
+
+        .thankyou-box p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .thankyou-box a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0a66c2;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .thankyou-box a:hover {
+            background-color: #084a8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IT_EXHIBITION</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- Feedback Form -->
+        <form class="feedback-form" id="feedbackForm">
+            <h2>IT Exhibition 2025 Feedback</h2>
+
+            <label for="name">Full Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="feedback">Your Feedback :</label>
+            <textarea id="feedback" name="feedback" placeholder="Share your feedback"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div class="thankyou-box" id="thankYouMessage">
+            <h2>Thank You!</h2>
+            <p>Your feedback has been successfully submitted. We appreciate your input!</p>
+            <a href="index.html" id="backButton">Back to Feedback</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>IT Exhibition 2025</h3>
+                <p>Empowering students to innovate and showcase technology.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: IT_EXHIBITION_2025@itexhibition.com</p>
+                <p>Phone: +91 7567628465</p>
+                <p>Location: India</p>
+                <p id="social-media" style="color: #ff9800;">
+                    Follow us: 
+                    <a href="https://x.com/sandipdolar/likes" target="_blank"  aria-label="Twitter"><i class="fa fa-twitter" style="color: #1DA1F2;"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577570896349" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" style="color: blue;"></i></a>
+                    <a href="https://linkedin.com/in/sandip-dolar-94b28633b" target="_blank"  aria-label="LinkedIn"><i class="fa fa-linkedin" style="color: #1DA1F2;"></i>   </a>
+                </p>
+                <p>
+                    <i style="font-size: 22px; color: #ff9800;" class="fa fa-instagram"></i>             
+                    <a style="color: #1DA1F2;text-decoration: none;" href="https://www.instagram.com/sandip._.ahir._.212/?next=%2F" target="_blank">sandip._.ahir._.212</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 IT Exhibition. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const form = document.getElementById('feedbackForm');
+        const thankYou = document.getElementById('thankYouMessage');
+        const backButton = document.getElementById('backButton');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            form.style.display = 'none';
+            thankYou.style.display = 'block';
+        });
+
+        backButton.addEventListener('click', function(e){
+            e.preventDefault();
+            thankYou.style.display = 'none';
+            form.style.display = 'block';
+            form.reset();
+        });
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
